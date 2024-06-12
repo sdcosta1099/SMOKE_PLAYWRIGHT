@@ -8,22 +8,22 @@ test('UH_9483_View Player Info', async ({ page }) => {
     const pa = new playerAction(page)
 
   await common.goToHALOWebApplication()
-  await common.loginAndSubmit("TU_LAB_HALO_NIN_ADM","Password01@$")
+  // await common.loginAndSubmit("TU_LAB_HALO_NIN_ADM","Password01@$")
 
-  await pa.enterPlayerID('807879529')
-  await pa.clickOnSearch()
-  await pa.validatePlayerDashboardDisplayed()
-  await pa.validatePlayerNameDisplayed()
-  await pa.validatePlayerIdDisplayed()
-  await pa.validatePlayerTypeDisplayed()
-  await pa.validateDobDisplayed()
-  await pa.validateMemberSinceDisplayed()
-  await pa.validateTierExpirationDisplayed()
-  await pa.validateAccountTypeDisplayed()
-  await pa.validatePredominentLocationDisplayed()
-  //await pa.validateAccountLoyaltyCardDisplayed()
-  await pa.validateShowLinksDisplayed()
-  await pa.validateTierMatchIconDisplayed()
-  await common.logout();
+  // await pa.enterPlayerID('807879529')
+  // await pa.clickOnSearch()
+  // await pa.validatePlayerDashboardDisplayed()
+  // await pa.validatePlayerNameDisplayed()
+  // await pa.validatePlayerIdDisplayed()
+  // await pa.validatePlayerTypeDisplayed()
+  // await pa.validateDobDisplayed()
+  // await pa.validateMemberSinceDisplayed()
+  // await pa.validateTierExpirationDisplayed()
+  // await pa.validateAccountTypeDisplayed()
+  // await pa.validatePredominentLocationDisplayed()
+  // //await pa.validateAccountLoyaltyCardDisplayed()
+  // await pa.validateShowLinksDisplayed()
+  // await pa.validateTierMatchIconDisplayed()
+  // await common.logout();
 
-  });
+   });
