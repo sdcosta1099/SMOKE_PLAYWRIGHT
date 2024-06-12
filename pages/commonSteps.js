@@ -12,10 +12,10 @@ exports.commonSteps = class commonSteps{
     };
     
     async goToHALOWebApplication(){
+        await this.page.waitForTimeout(5000);
         await this.page.goto('https://haqasga-wbapp-1.seminolehardrock.fl.local/HaloWebApp/Login.aspx');
     }
-       // await expect(this.page).toHaveURL('https://haqasga-wbapp-1.seminolehardrock.fl.local/HaloWebApp/Login.aspx');
-    
+       
     async loginAndSubmit(username, password){
         await this.username_textbox.type(username);
         await this.password_textbox.type(password);
