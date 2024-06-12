@@ -3,11 +3,11 @@ on:
   push:
     branches: [ main, master ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master ]l
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
